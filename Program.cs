@@ -1,28 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
-namespace Cadenas
+namespace Arreglos1
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-			string cadena;
-
-            Console.WriteLine("Ingrese una frase cualquiera ");
-            cadena = Console.ReadLine();
-
-            char[] partes = { ' ' };
-            string[] frase = cadena.Split(partes);
-            int i;
-            for (i = 0; i < frase.Length; i++) 
-            {
-
-                Console.WriteLine("palabra {0}={1}  ",(i+0), frase[i]);
-            }
-            Console.ReadKey();
-        }
-		
-    }
+	public class Programa
+	{
+		public static void Main(string[] args)
+		{
+			float[] valores = { 46,35,20,15,55,77,99 };
+			float media = valores.Average();
+			Console.WriteLine("La media de los valores es: " + media);
+		}
+	}
 }
